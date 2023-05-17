@@ -1,0 +1,22 @@
+ansible_connection: local
+ansible_python_interpreter: "{{ansible_playbook_python}}"
+homebrew_cask_accept_external_apps: true
+homebrew_cask_apps:
+  - arc
+  - obsidian
+  - sublime-text
+  - utm
+homebrew_installed_packages:
+  - awscli
+  - gh
+  - git
+  - ipcalc
+  - jq
+  - nmap
+  - tfswitch
+  - wget
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
+  - homebrew/services
+homebrew_upgrade_all_packages: true

@@ -4,12 +4,12 @@ version = '0.1.0'
 description = ''
 authors = ['James Armes <jarmes@codeforamerica.org>']
 readme = 'README.md'
-packages = [{include = 'laptop_setup'}]
 
 [tool.poetry.dependencies]
 python = '^3.11'
 ansible = '~7.5'
-
+molecule = '~5.0'
+molecule-docker = '~2.1'
 
 [build-system]
 requires = ['poetry-core']
