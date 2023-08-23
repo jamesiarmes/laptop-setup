@@ -1,0 +1,32 @@
+ansible_connection: local
+ansible_python_interpreter: "{{ansible_playbook_python}}"
+homebrew_cask_accept_external_apps: true
+homebrew_cask_apps:
+  - arc
+  - asana
+  - google-cloud-sdk
+  - loom
+  - obsidian
+  - sublime-text
+homebrew_installed_packages:
+  - amazon-ecs-cli
+  - awscli
+  - eksctl
+  - gh
+  - git
+  - ipcalc
+  - jq
+  - kubectl
+  - nmap
+  - tfswitch
+  - wget
+  # Java development
+  - gradle
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
+  - homebrew/services
+homebrew_cask_uninstalled_apps:
+  - utm
+homebrew_uninstalled_packages: []
+homebrew_upgrade_all_packages: true
