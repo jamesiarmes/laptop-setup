@@ -4,6 +4,8 @@ homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
   - obsidian
+  - mp3tag
+  - slack
   - sublime-text
   - utm
 homebrew_installed_packages:
