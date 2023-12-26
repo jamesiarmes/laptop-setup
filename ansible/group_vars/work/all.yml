@@ -4,28 +4,74 @@ homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
   - asana
+  - aws-vpn-client
+  - brewservicesmenubar
   - google-cloud-sdk
+  - gpg-suite-no-mail
+  - iterm2
+  - jetbrains-toolbox
+  - keybase
+  - lastpass
   - loom
+  - notion
   - obsidian
+  - session-manager-plugin
+  - slack
+  - spotify
   - sublime-text
 homebrew_installed_packages:
+  # AWS packages
   - amazon-ecs-cli
   - awscli
   - eksctl
+  # Development
   - gh
   - git
-  - ipcalc
-  - jq
-  - kubectl
-  - nmap
-  - tfswitch
-  - wget
-  # Java development
+  - go
   - gradle
+  - heroku
+  - node
+  - openssl@1.1
+  - openssl@3
+  - postgresql@15
+  - python@3.12
+  # Docker packages
+  - docker
+  - docker-completion
+  - docker-credential-helper
+  # MongoDB packages
+  - mongodb-community
+  - mongodb-database-tools
+  - mongosh
+  # Network tools
+  - ipcalc
+  - nmap
+  - speedtest-cli
+  - tcptraceroute
+  # Python packages
+  - poetry
+  # Terraform packages
+  - tflint
+  - tfsec
+  - tfswitch
+  # Utiliies
+  - dos2unix
+  - grep
+  - jq
+  - jsonlint
+  - keyring
+  - mas
+  - openjdk
+  - pinentry
+  - pinentry-mac
+  - readline
+  - wget
+  - zsh
 homebrew_taps:
   - homebrew/cask
   - homebrew/core
   - homebrew/services
+  - mongodb/brew
 homebrew_cask_uninstalled_apps:
   - utm
 homebrew_uninstalled_packages: []
