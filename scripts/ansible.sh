@@ -3,7 +3,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 TEXT_COLOR="\033[1;34m"
 NO_COLOR="\033[0m"
-INVENTORY="${ANSIBLE_INVENTORY:-home}"
+INVENTORY="${INVENTORY:-home}"
 
 echo -e "${TEXT_COLOR}Installing python dependencies${NO_COLOR}"
 poetry install

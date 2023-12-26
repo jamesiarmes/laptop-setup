@@ -1,0 +1,4 @@
+- name: Configure zsh
+  template:
+    src: zshrc.j2
+    dest: ~/.zshrc

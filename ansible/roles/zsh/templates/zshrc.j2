@@ -1,0 +1,10 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Add OpenJDK to the path
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# Include oh-my-zsh config
+source {{ omz_config_path }}
+
+# Set the path to openssl libraries.
+export PKG_CONFIG_PATH=/usr/local/Cellar/openssl@1.1/1.1.1s/lib/pkgconfig

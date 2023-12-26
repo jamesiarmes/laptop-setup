@@ -5,3 +5,8 @@
   roles:
     - elliotweiser.osx-command-line-tools
     - geerlingguy.mac.homebrew
+    - role: omz
+      vars:
+        plugins: "{{ omz_plugins }}"
+      when: omz_plugins is defined
+    - role: zsh

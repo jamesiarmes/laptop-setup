@@ -30,3 +30,26 @@ homebrew_cask_uninstalled_apps:
   - utm
 homebrew_uninstalled_packages: []
 homebrew_upgrade_all_packages: true
+omz_plugins:
+  - git
+  - docker
+  - brew
+  - bundler
+  - branch
+  - colored-man-pages
+  - command-not-found
+  - dotenv
+  - gem
+  - git-prompt
+  - macos
+  - python
+  - rails
+  - ruby
+  - rvm
+  - rsync
+  - ssh-agent
+  - sudo
+  - terraform
+  - thefuck
+  - thor
+  - aws

@@ -1,0 +1,10 @@
+- name: Install oh-my-zsh
+  git:
+    repo: https://github.com/ohmyzsh/ohmyzsh.git
+    dest: ~/.oh-my-zsh
+    depth: 1
+
+- name: Set config
+  template:
+    src: zshrc.j2
+    dest: ~/.zshrc.d/omz.sh

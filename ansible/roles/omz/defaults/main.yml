@@ -1,0 +1,5 @@
+plugins: []
+completion:
+  case_sensitive: true
+  hyphen_sensitive: true
+updates: auto # auto, disabled, reminder
