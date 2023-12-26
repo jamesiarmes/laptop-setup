@@ -7,18 +7,25 @@ homebrew_cask_apps:
   - aws-vpn-client
   - brewservicesmenubar
   - google-cloud-sdk
+  - google-drive
   - gpg-suite-no-mail
   - iterm2
   - jetbrains-toolbox
   - keybase
   - lastpass
+  - logi-options-plus
   - loom
   - notion
   - obsidian
   - session-manager-plugin
+  - skitch
   - slack
   - spotify
   - sublime-text
+  - tuple
+  - webex
+  - yubico-authenticator
+  - zoom
 homebrew_installed_packages:
   # AWS packages
   - amazon-ecs-cli
@@ -76,6 +83,9 @@ homebrew_cask_uninstalled_apps:
   - utm
 homebrew_uninstalled_packages: []
 homebrew_upgrade_all_packages: true
+mas_installed_apps:
+  - id: 1252988123
+    name: RegEx Lab
 omz_plugins:
   - git
   - docker

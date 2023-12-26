@@ -1,12 +1,17 @@
 
-- name: Install dependencies for work
+- name: Setup system
   hosts: localhost
   become: false
   roles:
     - elliotweiser.osx-command-line-tools
     - geerlingguy.mac.homebrew
+    - role: geerlingguy.mac.mas
+      vars:
+        mas_email: "{{ lookup('env', 'MAS_EMAIL') }}"
+        mas_signin_dialog: true
+      when: lookup('env', 'MAS_EMAIL') | length > 0
     - role: omz
       vars:
         plugins: "{{ omz_plugins }}"
       when: omz_plugins is defined
-    - role: zsh
+    - zsh

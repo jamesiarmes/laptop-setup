@@ -4,11 +4,12 @@ homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
   - brewservicesmenubar
-  - obsidian
   - mp3tag
+  - obsidian
   - slack
   - sublime-text
   - utm
+  - whalebird
 homebrew_installed_packages:
   - awscli
   - gh
