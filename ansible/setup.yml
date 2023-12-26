@@ -10,6 +10,7 @@
         mas_email: "{{ lookup('env', 'MAS_EMAIL') }}"
         mas_signin_dialog: true
       when: lookup('env', 'MAS_EMAIL') | length > 0
+    - role: geerlingguy.mac.dock
     - role: omz
       vars:
         plugins: "{{ omz_plugins }}"
