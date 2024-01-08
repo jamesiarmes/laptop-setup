@@ -24,14 +24,47 @@ dockitems_remove:
 dockitems_persist:
   - name: Arc
     path: /Applications/Arc.app
+    pos: 1
+  - name: Asana
+    path: /Applications/Asana.app
+    pos: 2
   - name: iTerm
     path: /Applications/iTerm.app
+    pos: 3
   - name: LastPass
     path: /Applications/LastPass.app
+    pos: 4
   - name: Obsidian
     path: /Applications/Obsidian.app
+    pos: 5
   - name: Spotify
     path: /Applications/Spotify.app
+    pos: 6
+git_config:
+  - name: diff.tool
+    value: vimdiff
+  - name: difftool.prompt
+    value: "false"
+  - name: alias.d
+    value: difftool
+  - name: user.name
+    value: "{{ lookup('env', 'WORK_NAME') }}"
+  - name: user.email
+    value: "{{ lookup('env', 'WORK_EMAIL') }}"
+  - name: user.signingkey
+    value: "{{ lookup('env', 'WORK_GPG_KEY') }}"
+  - name: commit.gpgsign
+    value: "true"
+  - name: init.defaultbranch
+    value: main
+  - name: core.commentchar
+    value: auto
+  - name: core.excludesfile
+    value: ~/.gitignore
+  - name: core.autocrlf
+    value: input
+  - name: gpg.program
+    value: /usr/local/bin/gpg
 homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc

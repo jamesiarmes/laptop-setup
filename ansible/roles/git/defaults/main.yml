@@ -1,0 +1,24 @@
+git_config:
+  # Aliases.
+  - name: alias.d
+    value: difftool
+  # Core settings.
+  - name: core.commentchar
+    value: auto
+  - name: core.excludesfile
+    value: ~/.gitignore
+  - name: core.autocrlf
+    value: input
+  # Diff settings.
+  - name: diff.tool
+    value: vimdiff
+  - name: difftool.prompt
+    value: "false"
+  # Initialization settings.
+  - name: init.defaultbranch
+    value: main
+  # User settings.
+  - name: user.name
+    value: "{{ lookup('env', 'WORK_NAME') }}"
+  - name: user.email
+    value: "{{ lookup('env', 'WORK_EMAIL') }}"

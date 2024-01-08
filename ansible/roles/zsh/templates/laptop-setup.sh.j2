@@ -1,2 +1,5 @@
 export INVENTORY="{{ group_names | first }}"
 export MAS_EMAIL="{{ lookup('env', 'MAS_EMAIL') }}"
+export WORK_EMAIL="{{ lookup('env', 'WORK_EMAIL') }}"
+export WORK_GPG_KEY="{{ lookup('env', 'WORK_GPG_KEY') }}"
+export WORK_NAME="{{ lookup('env', 'WORK_NAME') }}"
