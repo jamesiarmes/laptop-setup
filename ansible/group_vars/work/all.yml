@@ -2,8 +2,25 @@ ansible_connection: local
 ansible_python_interpreter: "{{ansible_playbook_python}}"
 dockitems_remove:
   - App Store
+  - Calendar
+  - Contacts
+  - FaceTime
+  - Freeform
+  - Keynote
   - Launchpad
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - News
+  - Notes
+  - Numbers
+  - Pages
+  - Photos
+  - Reminders
+  - Safari
   - System Settings
+  - TV
 dockitems_persist:
   - name: Arc
     path: /Applications/Arc.app
@@ -13,6 +30,8 @@ dockitems_persist:
     path: /Applications/LastPass.app
   - name: Obsidian
     path: /Applications/Obsidian.app
+  - name: Spotify
+    path: /Applications/Spotify.app
 homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
@@ -38,7 +57,6 @@ homebrew_cask_apps:
   - tuple
   - webex
   - yubico-authenticator
-  - zoom
 homebrew_installed_packages:
   # AWS packages
   - amazon-ecs-cli
@@ -85,15 +103,15 @@ homebrew_installed_packages:
   - pinentry
   - pinentry-mac
   - readline
+  - thefuck
   - wget
   - zsh
 homebrew_taps:
-  - homebrew/cask
-  - homebrew/core
+  - heroku/brew
   - homebrew/services
   - mongodb/brew
-homebrew_cask_uninstalled_apps:
-  - utm
+  - warrensbox/tap
+homebrew_cask_uninstalled_apps: []
 homebrew_uninstalled_packages: []
 homebrew_upgrade_all_packages: true
 mas_installed_apps:

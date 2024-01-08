@@ -6,7 +6,7 @@ authors = ['James Armes <jarmes@codeforamerica.org>']
 readme = 'README.md'
 
 [tool.poetry.dependencies]
-python = '^3.11'
+python = '^3.9'
 ansible = '~7.5'
 molecule = '~5.0'
 molecule-docker = '~2.1'
