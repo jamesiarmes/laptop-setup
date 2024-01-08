@@ -38,6 +38,7 @@ homebrew_cask_apps:
   - asana
   - aws-vpn-client
   - brewservicesmenubar
+  - docker # actually installs docker desktop
   - google-cloud-sdk
   - google-drive
   - gpg-suite-no-mail
@@ -74,8 +75,6 @@ homebrew_installed_packages:
   - postgresql@15
   - python@3.12
   # Docker packages
-  - docker
-  - docker-completion
   - docker-credential-helper
   # MongoDB packages
   - mongodb-community
@@ -112,7 +111,10 @@ homebrew_taps:
   - mongodb/brew
   - warrensbox/tap
 homebrew_cask_uninstalled_apps: []
-homebrew_uninstalled_packages: []
+homebrew_uninstalled_packages:
+  # These packages provide CLI tools only. We need Docker Desktop to run containers.
+  - docker
+  - docker-completion
 homebrew_upgrade_all_packages: true
 mas_installed_apps:
   - id: 1252988123

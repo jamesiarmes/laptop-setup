@@ -13,3 +13,9 @@ poetry install
 - Install external packages:
   - [Sound Control](https://staticz.com/soundcontrol/) 
 - Manage JetBrains configs
+- Global git config
+- Create an ssh key?
+- GPG keys?
+- Macos settings?
+  - Default browser
+  - Prefer tabs
