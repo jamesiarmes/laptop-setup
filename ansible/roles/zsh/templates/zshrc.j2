@@ -3,6 +3,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Add OpenJDK to the path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
+# Load laptop setup config
+source $HOME/.zshrc.d/laptop-setup.sh
+
 # Include oh-my-zsh config
 source {{ omz_config_path }}
 

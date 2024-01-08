@@ -1,3 +1,14 @@
+- name: Create directory for additional configuration
+  file:
+    path: ~/.zshrc.d
+    state: directory
+    mode: '0775'
+
+- name: Add laptop setup configuration
+  template:
+    src: laptop-setup.sh.j2
+    dest: ~/.zshrc.d/laptop-setup.sh
+
 - name: Configure zsh
   template:
     src: zshrc.j2
