@@ -1,0 +1,3 @@
+{% for alias in zsh_aliases %}
+alias {{ alias.name }}='{{ alias.command }}'
+{% endfor %}

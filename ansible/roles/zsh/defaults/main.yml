@@ -1,2 +1,1 @@
-omz_config_path: ~/.zshrc.d/omz.sh
-aliases: {}
+zsh_aliases: {}

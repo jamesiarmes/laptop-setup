@@ -1,0 +1,26 @@
+- name: Install rvm
+  shell:
+    cmd: curl -sSL https://get.rvm.io | bash
+
+- name: Add zsh configuration
+  copy:
+    src: rvm.sh
+    dest: ~/.zshrc.d/rvm.sh
+
+- name: Install the latest ruby
+  shell:
+    cmd: |
+      source ~/.rvm/scripts/rvm
+      rvm install ruby --latest --default --with-openssl-dir=$(brew --prefix openssl)
+
+- name: Install additional rubies
+  shell:
+    cmd: |
+      source ~/.rvm/scripts/rvm
+      rvm install {{ item }} --with-openssl-dir=$(brew --prefix openssl)
+  loop: "{{ rvm_install_rubies }}"
+
+- name: Configure bundler
+  copy:
+    src: bundler.yml
+    dest: ~/.bundle/config

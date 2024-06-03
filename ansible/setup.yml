@@ -17,3 +17,4 @@
         plugins: "{{ omz_plugins }}"
       when: omz_plugins is defined
     - role: git
+    - role: rvm

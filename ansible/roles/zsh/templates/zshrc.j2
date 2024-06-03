@@ -3,11 +3,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Add OpenJDK to the path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-# Load laptop setup config
-source $HOME/.zshrc.d/laptop-setup.sh
-
-# Include oh-my-zsh config
-source {{ omz_config_path }}
+# Include additional configs.
+for file in $HOME/.zshrc.d/*.sh;
+    do source $file;
+done
 
 # Set the path to openssl libraries.
 export PKG_CONFIG_PATH=/usr/local/Cellar/openssl@1.1/1.1.1s/lib/pkgconfig

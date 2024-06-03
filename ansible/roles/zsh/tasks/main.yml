@@ -4,12 +4,22 @@
     state: directory
     mode: '0775'
 
+- name: Configure zsh
+  template:
+    src: zshrc.j2
+    dest: ~/.zshrc
+
+- name: Configure nvm
+  copy:
+    src: nvm.sh
+    dest: ~/.zshrc.d/nvm.sh
+
 - name: Add laptop setup configuration
   template:
     src: laptop-setup.sh.j2
     dest: ~/.zshrc.d/laptop-setup.sh
 
-- name: Configure zsh
+- name: Configure aliases
   template:
-    src: zshrc.j2
-    dest: ~/.zshrc
+    src: aliases.sh.j2
+    dest: ~/.zshrc.d/aliases

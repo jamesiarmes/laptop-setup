@@ -101,8 +101,9 @@ homebrew_installed_packages:
   - git
   - go
   - gradle
+  - helm
   - heroku
-  - node
+  - nvm
   - openssl@1.1
   - openssl@3
   - postgresql@15
@@ -175,3 +176,6 @@ omz_plugins:
   - thefuck
   - thor
   - aws
+zsh_aliases:
+  - name: be
+    command: bundle exec
