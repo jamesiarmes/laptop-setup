@@ -1,5 +1,41 @@
 ansible_connection: local
 ansible_python_interpreter: "{{ansible_playbook_python}}"
+dockitems_remove:
+  - App Store
+  - Calendar
+  - Contacts
+  - FaceTime
+  - Freeform
+  - iTerm
+  - Keynote
+  - Launchpad
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - News
+  - Notes
+  - Numbers
+  - Pages
+  - Photos
+  - Reminders
+  - Safari
+  - SilverFast 8
+  - System Settings
+  - TV
+dockitems_persist:
+  - name: Arc
+    path: /Applications/Arc.app
+    pos: 1
+  - name: Ghostty
+    path: /Applications/Ghostty.app
+    pos: 2
+  - name: Obsidian
+    path: /Applications/Obsidian.app
+    pos: 3
+  - name: Spotify
+    path: /Applications/Spotify.app
+    pos: 4
 homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
