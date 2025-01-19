@@ -4,27 +4,51 @@ homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - arc
   - brewservicesmenubar
+  - cleanshot
+  - docker
+  - ghostty
+  - google-drive
+  - iterm2
+  - jetbrains-toolbox
+  - keybase
   - mp3tag
   - obsidian
   - slack
+  - spotify
   - sublime-text
   - utm
-  - whalebird
 homebrew_installed_packages:
   - awscli
+  - docker-credential-helper
   - gh
   - git
+  - grep
   - ipcalc
   - jq
+  - keyring
+  - mas
   - nmap
-  - tfswitch
+  - openjdk
+  - pinentry
+  - pinentry-mac
+  - poetry
+  - readline
+  - thefuck
   - wget
+  - zsh
 homebrew_taps:
   - homebrew/cask
   - homebrew/core
   - homebrew/services
-homebrew_cask_uninstalled_apps: []
-homebrew_uninstalled_packages: []
+homebrew_cask_uninstalled_apps:
+  - dockutil
+  - skitch
+  - yubico-authenticator
+homebrew_uninstalled_packages:
+  - tfswitch
 homebrew_upgrade_all_packages: true
+mas_installed_apps:
+  - id: 1252988123
+    name: RegEx Lab
 omz_plugins:
   - git
